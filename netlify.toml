@@ -1,14 +1,5 @@
 [build]
   command = "npm run build"
-  # Do NOT set publish = ".next" for Next.js — the Next plugin handles output.
-  # If you need a specific Node version, set it here (optional)
-  node_version = "22"
-
-  # Force npm to use legacy peer deps to avoid ERESOLVE CI failures
   npm_flags = ["--legacy-peer-deps"]
-
-  # Optional: where Netlify will look for serverless functions
+  node_version = "22"
   functions = "netlify/functions"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
