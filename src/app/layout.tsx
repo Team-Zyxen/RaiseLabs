@@ -74,6 +74,23 @@ export default function RootLayout({
           src="https://identity.netlify.com/v1/netlify-identity-widget.js"
           strategy="afterInteractive"
         />
+        <Script
+          id="netlify-identity-redirect"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", function(user) {
+                  if (!user) {
+                    window.netlifyIdentity.on("login", function() {
+                      document.location.href = "/admin/";
+                    });
+                  }
+                });
+              }
+            `
+          }}
+        />
         {children}
         <Toaster />
         <VisualEditsMessenger />
