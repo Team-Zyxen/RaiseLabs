@@ -1,0 +1,209 @@
+backend:
+  name: test-repo
+
+local_backend: true
+
+media_folder: "public/images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Full Description", name: "fullDescription", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Tablet Hardness Testing Instruments", value: "tablet-hardness-testing" }
+          - { label: "Tablet Friability Testing Instruments", value: "tablet-friability-testing" }
+          - { label: "Tablet Disintegration Testing Instruments", value: "tablet-disintegration-testing" }
+          - { label: "Tablet Dissolution Testing Instruments", value: "tablet-dissolution-testing" }
+          - { label: "Powder Testing Instruments", value: "powder-testing" }
+          - { label: "Packaging Integrity Testing Instruments", value: "packaging-integrity-testing" }
+      - { label: "Price", name: "price", widget: "string", required: false }
+      - label: "Features"
+        name: "features"
+        widget: "list"
+        field: { label: "Feature", name: "feature", widget: "string" }
+      - label: "Specifications"
+        name: "specs"
+        widget: "list"
+        fields:
+          - { label: "Label", name: "label", widget: "string" }
+          - { label: "Value", name: "value", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "SEO Settings"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string", required: false, hint: "Override default title for search engines (60 chars recommended)" }
+          - { label: "SEO Description", name: "description", widget: "text", required: false, hint: "Meta description for search engines (155-160 chars recommended)" }
+          - { label: "Keywords", name: "keywords", widget: "list", required: false, hint: "Comma-separated keywords for SEO" }
+          - { label: "Canonical URL", name: "canonical", widget: "string", required: false }
+          - { label: "OG Image", name: "ogImage", widget: "image", required: false, hint: "Social media share image (1200x630 recommended)" }
+
+  - name: "categories"
+    label: "Categories"
+    folder: "content/categories"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Product Count", name: "productCount", widget: "number", default: 0 }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "SEO Settings"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string", required: false }
+          - { label: "SEO Description", name: "description", widget: "text", required: false }
+          - { label: "Keywords", name: "keywords", widget: "list", required: false }
+          - { label: "OG Image", name: "ogImage", widget: "image", required: false }
+
+  - name: "blog"
+    label: "Blog"
+    folder: "content/blog"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Pharmaceutical Testing"
+          - "Laboratory Equipment"
+          - "Quality Control"
+          - "Regulatory Compliance"
+          - "Product Updates"
+          - "Industry News"
+          - "Technical Guides"
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - label: "SEO Settings"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string", required: false }
+          - { label: "SEO Description", name: "description", widget: "text", required: false }
+          - { label: "Keywords", name: "keywords", widget: "list", required: false }
+          - { label: "OG Image", name: "ogImage", widget: "image", required: false }
+
+  - name: "news"
+    label: "News"
+    folder: "content/news"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Excerpt", name: "excerpt", widget: "text" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Publish Date", name: "date", widget: "datetime" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - "Product Launch"
+          - "Partnership"
+          - "Certification"
+          - "Awards"
+          - "Expansion"
+          - "Company News"
+          - "Industry Updates"
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Featured", name: "featured", widget: "boolean", default: false }
+      - label: "SEO Settings"
+        name: "seo"
+        widget: "object"
+        collapsed: true
+        fields:
+          - { label: "SEO Title", name: "title", widget: "string", required: false }
+          - { label: "SEO Description", name: "description", widget: "text", required: false }
+          - { label: "Keywords", name: "keywords", widget: "list", required: false }
+          - { label: "OG Image", name: "ogImage", widget: "image", required: false }
+
+  - name: "pages"
+    label: "Pages"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "content/pages/about.md"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Hero Image", name: "heroImage", widget: "image" }
+          - { label: "Story", name: "story", widget: "markdown" }
+          - label: "Values"
+            name: "values"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Description", name: "description", widget: "text" }
+              - { label: "Icon", name: "icon", widget: "string" }
+          - label: "Team Members"
+            name: "team"
+            widget: "list"
+            fields:
+              - { label: "Name", name: "name", widget: "string" }
+              - { label: "Role", name: "role", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Bio", name: "bio", widget: "text", required: false }
+          - label: "SEO Settings"
+            name: "seo"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "SEO Title", name: "title", widget: "string", required: false }
+              - { label: "SEO Description", name: "description", widget: "text", required: false }
+              - { label: "Keywords", name: "keywords", widget: "list", required: false }
+
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Site Settings"
+        name: "site"
+        file: "content/settings/site.json"
+        fields:
+          - { label: "Site Title", name: "title", widget: "string" }
+          - { label: "Site Description", name: "description", widget: "text" }
+          - { label: "Logo", name: "logo", widget: "image", required: false }
+          - label: "Social Media"
+            name: "social"
+            widget: "object"
+            fields:
+              - { label: "Facebook", name: "facebook", widget: "string", required: false }
+              - { label: "Twitter", name: "twitter", widget: "string", required: false }
+              - { label: "LinkedIn", name: "linkedin", widget: "string", required: false }
+              - { label: "Instagram", name: "instagram", widget: "string", required: false }
+          - label: "Contact Info"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Email", name: "email", widget: "string" }
+              - { label: "Phone", name: "phone", widget: "string" }
+              - { label: "Address", name: "address", widget: "text" }
+          - label: "SEO Defaults"
+            name: "seoDefaults"
+            widget: "object"
+            collapsed: true
+            fields:
+              - { label: "Default SEO Title Suffix", name: "titleSuffix", widget: "string", default: "| Raise Lab Equipment" }
+              - { label: "Default OG Image", name: "ogImage", widget: "image", required: false }
+              - { label: "Twitter Handle", name: "twitterHandle", widget: "string", required: false }
