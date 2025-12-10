@@ -1,6 +1,6 @@
 [build]
   command = "npm run build"
-  publish = ""
+  publish = ".netlify/output"
   npm_flags = ["--legacy-peer-deps"]
   node_version = "22"
   functions = "netlify/functions"
