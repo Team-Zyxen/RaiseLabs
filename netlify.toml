@@ -1,8 +1,9 @@
 [build]
-  command = "npm run build"
+  command = "npm run build && echo '--- ls .next ---' && ls -la .next || true && echo '--- ls .netlify ---' && ls -la .netlify || true"
   publish = ".netlify/output"
   npm_flags = ["--legacy-peer-deps"]
   node_version = "22"
   functions = "netlify/functions"
+
 [[plugins]]
   package = "@netlify/plugin-nextjs"
