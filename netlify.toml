@@ -1,8 +1,9 @@
 [build]
-  command = "npm run build && npx @netlify/plugin-nextjs assemble"
-  publish = ".netlify/output"
-  functions = "netlify/functions"
+  command     = "npm run build"
+  publish     = ".netlify/output"
+  functions   = "netlify/functions"
   node_version = "22"
+  npm_flags = ["--legacy-peer-deps"]
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
