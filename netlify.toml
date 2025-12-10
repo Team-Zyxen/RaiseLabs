@@ -1,10 +1,6 @@
 [build]
-  command = "bun run build"
+  command = "npm run build"
   publish = ".next"
 
 [[plugins]]
 package = "@netlify/plugin-nextjs"
-
-  [plugins.inputs]
-    disable_forms = true
-    generate_redirects = true
