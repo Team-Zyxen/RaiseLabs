@@ -1,7 +1,7 @@
 # netlify.toml - minimal & compatible for Next.js with @netlify/plugin-nextjs
 [build]
-  command = "npm run build"
-  functions = "netlify/functions"
+  command    = "npm run build"
+  functions  = "netlify/functions"
   node_version = "18"
 
 [[plugins]]
