@@ -1,52 +1,63 @@
 {
   "posts": [
     {
-      "id": "raise-lab-iso-certification-2024",
-      "slug": "raise-lab-iso-certification-2024",
-      "title": "Raise Lab Equipment Achieves ISO 9001:2015 Certification",
       "excerpt": "We are proud to announce that Raise Lab Equipment has successfully achieved ISO 9001:2015 certification, reinforcing our commitment to quality and excellence.",
-      "content": "<p>We are thrilled to announce that Raise Lab Equipment has achieved the prestigious ISO 9001:2015 certification. This internationally recognized standard demonstrates our commitment to maintaining the highest quality management systems and delivering superior products to our customers.</p><p>The ISO 9001:2015 certification validates our rigorous quality control processes, from product design and manufacturing to customer service and support. This achievement reflects years of dedication to continuous improvement and customer satisfaction.</p><p>Key benefits of this certification include:</p><ul><li>Enhanced quality assurance in all our laboratory testing equipment</li><li>Improved operational efficiency and reduced waste</li><li>Stronger customer confidence in our products</li><li>Demonstrated commitment to regulatory compliance</li><li>Continuous monitoring and improvement of our processes</li></ul><p>This certification reinforces our position as a trusted provider of pharmaceutical testing instruments and laboratory equipment. We remain committed to innovation and excellence in serving the pharmaceutical and research industries.</p>",
-      "date": "2024-11-15",
-      "category": "Certification",
-      "image": "/images/uploads/certificate.jpg",
+      "slug": "raise-lab-iso-certification-2024",
       "featured": true,
-      "published": true
+      "published": true,
+      "date": "2024-11-15",
+      "title": "Raise Lab Equipment Achieves ISO 9001:2015 Certification",
+      "content": "<p>We are thrilled to announce that Raise Lab Equipment has achieved the prestigious ISO 9001:2015 certification. This internationally recognized standard demonstrates our commitment to maintaining the highest quality management systems and delivering superior products to our customers.</p><p>The ISO 9001:2015 certification validates our rigorous quality control processes, from product design and manufacturing to customer service and support. This achievement reflects years of dedication to continuous improvement and customer satisfaction.</p><p>Key benefits of this certification include:</p><ul><li>Enhanced quality assurance in all our laboratory testing equipment</li><li>Improved operational efficiency and reduced waste</li><li>Stronger customer confidence in our products</li><li>Demonstrated commitment to regulatory compliance</li><li>Continuous monitoring and improvement of our processes</li></ul><p>This certification reinforces our position as a trusted provider of pharmaceutical testing instruments and laboratory equipment. We remain committed to innovation and excellence in serving the pharmaceutical and research industries.</p>",
+      "id": "raise-lab-iso-certification-2024",
+      "image": "/images/uploads/certificate.jpg",
+      "category": "Certification"
     },
     {
-      "id": "new-dissolution-tester-launch",
-      "slug": "new-dissolution-tester-launch",
-      "title": "Introducing Our Advanced 8-Station Dissolution Tester",
       "excerpt": "Raise Lab Equipment launches a state-of-the-art 8-station dissolution testing system with enhanced automation and precision.",
-      "content": "<p>We are excited to introduce our latest innovation - the Advanced 8-Station Dissolution Tester, designed to meet the evolving needs of pharmaceutical quality control laboratories.</p><p>This cutting-edge system combines precision engineering with user-friendly automation, offering:</p><ul><li>8 independent testing stations for high-throughput analysis</li><li>Automated sampling system with programmable intervals</li><li>Temperature control accuracy of ±0.1°C</li><li>Integrated data management software</li><li>Compliance with USP, BP, and EP standards</li><li>21 CFR Part 11 compliant data logging</li></ul><p>The system is designed for pharmaceutical companies conducting dissolution studies on tablets, capsules, and other solid dosage forms. Its advanced automation reduces manual intervention while ensuring consistent and reliable results.</p><p>Contact our sales team to schedule a demonstration and learn how this system can enhance your laboratory's efficiency.</p>",
+      "slug": "new-dissolution-tester-launch",
+      "featured": false,
+      "published": true,
       "date": "2024-10-28",
-      "category": "Product Launch",
+      "title": "Introducing Our Advanced 8-Station Dissolution Tester",
+      "content": "<p>We are excited to introduce our latest innovation - the Advanced 8-Station Dissolution Tester, designed to meet the evolving needs of pharmaceutical quality control laboratories.</p><p>This cutting-edge system combines precision engineering with user-friendly automation, offering:</p><ul><li>8 independent testing stations for high-throughput analysis</li><li>Automated sampling system with programmable intervals</li><li>Temperature control accuracy of ±0.1°C</li><li>Integrated data management software</li><li>Compliance with USP, BP, and EP standards</li><li>21 CFR Part 11 compliant data logging</li></ul><p>The system is designed for pharmaceutical companies conducting dissolution studies on tablets, capsules, and other solid dosage forms. Its advanced automation reduces manual intervention while ensuring consistent and reliable results.</p><p>Contact our sales team to schedule a demonstration and learn how this system can enhance your laboratory's efficiency.</p>",
+      "id": "new-dissolution-tester-launch",
       "image": "/images/uploads/dissolution-tester.jpg",
-      "featured": false,
-      "published": true
+      "category": "Product Launch"
     },
     {
-      "id": "partnership-pharmtech-research",
-      "slug": "partnership-pharmtech-research",
-      "title": "Strategic Partnership with PharmTech Research Institute",
       "excerpt": "Raise Lab Equipment partners with PharmTech Research Institute to advance pharmaceutical testing technology.",
-      "content": "<p>We are pleased to announce a strategic partnership with PharmTech Research Institute, a leading organization in pharmaceutical research and development.</p><p>This collaboration will focus on:</p><ul><li>Joint development of next-generation testing equipment</li><li>Research into innovative quality control methodologies</li><li>Training programs for laboratory professionals</li><li>Knowledge sharing on regulatory compliance</li></ul><p>Through this partnership, we aim to accelerate innovation in pharmaceutical testing technology and contribute to the advancement of drug quality and safety standards globally.</p><p>Dr. Sarah Chen, Director of PharmTech Research Institute, stated: \"This partnership brings together Raise Lab Equipment's manufacturing excellence with our research capabilities, creating opportunities for groundbreaking developments in pharmaceutical testing.\"</p>",
-      "date": "2024-09-12",
-      "category": "Partnership",
-      "image": "/images/uploads/partnership.jpg",
+      "slug": "partnership-pharmtech-research",
       "featured": false,
-      "published": true
+      "published": true,
+      "date": "2024-09-12",
+      "title": "Strategic Partnership with PharmTech Research Institute",
+      "content": "<p>We are pleased to announce a strategic partnership with PharmTech Research Institute, a leading organization in pharmaceutical research and development.</p><p>This collaboration will focus on:</p><ul><li>Joint development of next-generation testing equipment</li><li>Research into innovative quality control methodologies</li><li>Training programs for laboratory professionals</li><li>Knowledge sharing on regulatory compliance</li></ul><p>Through this partnership, we aim to accelerate innovation in pharmaceutical testing technology and contribute to the advancement of drug quality and safety standards globally.</p><p>Dr. Sarah Chen, Director of PharmTech Research Institute, stated: \"This partnership brings together Raise Lab Equipment's manufacturing excellence with our research capabilities, creating opportunities for groundbreaking developments in pharmaceutical testing.\"</p>",
+      "id": "partnership-pharmtech-research",
+      "image": "/images/uploads/partnership.jpg",
+      "category": "Partnership"
     },
     {
-      "id": "industry-excellence-award-2024",
-      "slug": "industry-excellence-award-2024",
-      "title": "Raise Lab Equipment Wins Industry Excellence Award 2024",
       "excerpt": "Recognized for outstanding contribution to pharmaceutical testing equipment innovation and quality.",
-      "content": "<p>We are honored to receive the Industry Excellence Award 2024 from the International Laboratory Equipment Association (ILEA). This prestigious award recognizes our commitment to innovation, quality, and customer satisfaction in the pharmaceutical testing equipment sector.</p><p>The award committee praised Raise Lab Equipment for:</p><ul><li>Continuous innovation in testing technology</li><li>Exceptional product quality and reliability</li><li>Outstanding customer support and service</li><li>Contribution to industry best practices</li><li>Commitment to regulatory compliance</li></ul><p>\"This award is a testament to the hard work and dedication of our entire team,\" said our CEO. \"We remain committed to providing the pharmaceutical industry with world-class testing equipment that ensures drug safety and quality.\"</p>",
-      "date": "2024-08-05",
-      "category": "Awards",
-      "image": "/images/uploads/award.jpg",
+      "slug": "industry-excellence-award-2024",
       "featured": false,
-      "published": true
+      "published": true,
+      "date": "2024-08-05",
+      "title": "Raise Lab Equipment Wins Industry Excellence Award 2024",
+      "content": "<p>We are honored to receive the Industry Excellence Award 2024 from the International Laboratory Equipment Association (ILEA). This prestigious award recognizes our commitment to innovation, quality, and customer satisfaction in the pharmaceutical testing equipment sector.</p><p>The award committee praised Raise Lab Equipment for:</p><ul><li>Continuous innovation in testing technology</li><li>Exceptional product quality and reliability</li><li>Outstanding customer support and service</li><li>Contribution to industry best practices</li><li>Commitment to regulatory compliance</li></ul><p>\"This award is a testament to the hard work and dedication of our entire team,\" said our CEO. \"We remain committed to providing the pharmaceutical industry with world-class testing equipment that ensures drug safety and quality.\"</p>",
+      "id": "industry-excellence-award-2024",
+      "image": "/images/uploads/award.jpg",
+      "category": "Awards"
+    },
+    {
+      "excerpt": "hbachjcd",
+      "slug": "new",
+      "featured": false,
+      "published": true,
+      "title": "New Workshop of RaiseLabs",
+      "content": " dsnm bmn nf sdfv",
+      "id": "new",
+      "image": "/images/uploads/screenshot-2023-10-05-102505.png",
+      "category": "Company News"
     }
   ]
 }
