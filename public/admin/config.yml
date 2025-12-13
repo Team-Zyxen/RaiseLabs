@@ -46,10 +46,10 @@ collections:
         collapsed: true
         fields:
           - { label: "SEO Title", name: "title", widget: "string", required: false, hint: "Override default title for search engines (60 chars recommended)" }
-          - { label: "SEO Description", name: "description", widget: "text", required: false, hint: "Meta description for search engines (155-160 chars recommended)" }
-          - { label: "Keywords", name: "keywords", widget: "list", required: false, hint: "Comma-separated keywords for SEO" }
+          - { label: "SEO Description", name: "description", widget: "text", required: false, hint: "155-160 chars recommended" }
+          - { label: "Keywords", name: "keywords", widget: "list", required: false }
           - { label: "Canonical URL", name: "canonical", widget: "string", required: false }
-          - { label: "OG Image", name: "ogImage", widget: "image", required: false, hint: "Social media share image (1200x630 recommended)" }
+          - { label: "OG Image", name: "ogImage", widget: "image", required: false }
 
   - name: "categories"
     label: "Categories"
@@ -74,38 +74,34 @@ collections:
 
   - name: "blog"
     label: "Blog"
-    folder: "content/blog"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    file: "content/blogs.json"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Excerpt", name: "excerpt", widget: "text" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read" }
-      - label: "Category"
-        name: "category"
-        widget: "select"
-        options:
-          - "Pharmaceutical Testing"
-          - "Laboratory Equipment"
-          - "Quality Control"
-          - "Regulatory Compliance"
-          - "Product Updates"
-          - "Industry News"
-          - "Technical Guides"
-      - { label: "Body", name: "body", widget: "markdown" }
-      - { label: "Featured", name: "featured", widget: "boolean", default: false }
-      - label: "SEO Settings"
-        name: "seo"
-        widget: "object"
-        collapsed: true
+      - label: "Blog Posts"
+        name: "posts"
+        widget: "list"
         fields:
-          - { label: "SEO Title", name: "title", widget: "string", required: false }
-          - { label: "SEO Description", name: "description", widget: "text", required: false }
-          - { label: "Keywords", name: "keywords", widget: "list", required: false }
-          - { label: "OG Image", name: "ogImage", widget: "image", required: false }
+          - { label: "ID", name: "id", widget: "string", hint: "Unique identifier (lowercase-with-dashes)" }
+          - { label: "Slug", name: "slug", widget: "string", hint: "URL-friendly slug (must match ID)" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Excerpt", name: "excerpt", widget: "text" }
+          - { label: "Content (HTML)", name: "content", widget: "markdown", hint: "This will be converted to HTML" }
+          - { label: "Author", name: "author", widget: "string", default: "Admin" }
+          - { label: "Publish Date", name: "date", widget: "date", format: "YYYY-MM-DD" }
+          - { label: "Cover Image", name: "coverImage", widget: "image" }
+          - { label: "Read Time", name: "readTime", widget: "string", default: "5 min read" }
+          - label: "Category"
+            name: "category"
+            widget: "select"
+            options:
+              - "Pharmaceutical Testing"
+              - "Laboratory Equipment"
+              - "Quality Control"
+              - "Regulatory Compliance"
+              - "Product Updates"
+              - "Industry News"
+              - "Technical Guides"
+          - { label: "Featured", name: "featured", widget: "boolean", default: false }
+          - { label: "Published", name: "published", widget: "hidden", default: true }
 
   - name: "news"
     label: "News"
