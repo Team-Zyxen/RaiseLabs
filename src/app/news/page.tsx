@@ -6,57 +6,9 @@ import Link from "next/link"
 import { Calendar, ArrowRight, TrendingUp } from "lucide-react"
 import Navigation from "@/components/Navigation"
 import Footer from "@/components/Footer"
+import { getAllNews } from "@/lib/news"
 
-const newsItems = [
-  {
-    id: "1",
-    title: "Elegance Launches Revolutionary AI Platform",
-    excerpt: "Our newest AI-powered platform sets new industry standards for automation and intelligence.",
-    image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80",
-    date: "March 18, 2024",
-    category: "Product Launch"
-  },
-  {
-    id: "2",
-    title: "Strategic Partnership with Global Tech Leader",
-    excerpt: "Announcing our collaboration to bring cutting-edge solutions to enterprise customers worldwide.",
-    image: "https://images.unsplash.com/photo-1560472355-536de3962603?w=800&q=80",
-    date: "March 16, 2024",
-    category: "Partnership"
-  },
-  {
-    id: "3",
-    title: "Elegance Wins Innovation Award 2024",
-    excerpt: "Recognized for excellence in cloud infrastructure and customer satisfaction.",
-    image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80",
-    date: "March 14, 2024",
-    category: "Awards"
-  },
-  {
-    id: "4",
-    title: "Expanding to New Markets in Asia Pacific",
-    excerpt: "Opening offices in Singapore, Tokyo, and Sydney to serve our growing customer base.",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
-    date: "March 11, 2024",
-    category: "Expansion"
-  },
-  {
-    id: "5",
-    title: "Q1 2024 Results: Record-Breaking Growth",
-    excerpt: "Achieving 150% year-over-year growth with 50,000+ new enterprise customers.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80",
-    date: "March 8, 2024",
-    category: "Financial"
-  },
-  {
-    id: "6",
-    title: "New Sustainability Initiative Launched",
-    excerpt: "Committing to carbon neutrality by 2025 with our comprehensive green technology program.",
-    image: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=800&q=80",
-    date: "March 5, 2024",
-    category: "Sustainability"
-  }
-]
+const newsItems = getAllNews()
 
 export default function NewsPage() {
   return (
@@ -106,7 +58,7 @@ export default function NewsPage() {
               <p className="text-muted-foreground">Our most recent announcement</p>
             </motion.div>
 
-            <Link href={`/news/${newsItems[0].id}`}>
+            <Link href={`/news/${newsItems[0].slug}`}>
               <motion.div
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -168,7 +120,7 @@ export default function NewsPage() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <Link href={`/news/${news.id}`}>
+                  <Link href={`/news/${news.slug}`}>
                     <motion.div
                       whileHover={{ y: -8 }}
                       transition={{ duration: 0.3 }}
