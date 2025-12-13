@@ -32,7 +32,7 @@ export default function ServicePage() {
       formData.append('files', file)
     })
     
-    console.log('Form submitted', Object.fromEntries(formData))
+    // Form submission logic here
   }
 
   return (
