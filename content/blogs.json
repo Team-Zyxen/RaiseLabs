@@ -1,32 +1,45 @@
 {
   "posts": [
     {
-      "id": "made-by-nishanth",
-      "slug": "made-by-nishanth",
-      "title": "Made by Nishanth",
       "excerpt": "this is just a test for the cms by nishanth",
-      "content": "<p>Im Nishanth Pallay, Founder of Zyxen doing this CMS testing</p>",
-      "author": "Nishanth",
-      "date": "2025-12-12",
-      "coverImage": "/images/uploads/screenshot-2025-11-21-001357.png",
       "readTime": "5 min read",
-      "category": "Quality Control",
+      "coverImage": "/images/uploads/screenshot-2025-11-21-001357.png",
+      "author": "Nishanth",
+      "slug": "made-by-nishanth",
       "featured": false,
-      "published": true
+      "published": true,
+      "date": "2025-12-12",
+      "title": "Made by Nishanth",
+      "content": "<p>Im Nishanth Pallay, Founder of Zyxen doing this CMS testing</p>",
+      "id": "made-by-nishanth",
+      "category": "Quality Control"
     },
     {
-      "id": "test-1",
-      "slug": "test-1",
-      "title": "test 1",
       "excerpt": "123456789",
-      "content": "<p>Q%W^zexrcitvuoybiupn</p>",
-      "author": "2asedrftyivuboiunpi",
-      "date": "2025-12-13",
-      "coverImage": "/images/uploads/screenshot-2025-11-21-001357.png",
       "readTime": "5 min read",
-      "category": "Laboratory Equipment",
+      "coverImage": "/images/uploads/screenshot-2025-11-21-001357.png",
+      "author": "2asedrftyivuboiunpi",
+      "slug": "test-1",
       "featured": false,
-      "published": true
+      "published": true,
+      "date": "2025-12-13",
+      "title": "test 1",
+      "content": "<p>Q%W^zexrcitvuoybiupn</p>",
+      "id": "test-1",
+      "category": "Laboratory Equipment"
+    },
+    {
+      "excerpt": "Nishanth",
+      "readTime": "69 min read",
+      "coverImage": "/images/uploads/nishanth-resume-latest-.png",
+      "author": "Admin",
+      "slug": "nish-fish",
+      "featured": false,
+      "published": true,
+      "title": "The new added Blog from cms ",
+      "content": "jcbdhvchgsdvcmhvcmvbfhv hmvvgnvc vmfjhvjhbvhmnb",
+      "id": "nish-fish",
+      "category": "Quality Control"
     }
   ]
 }
