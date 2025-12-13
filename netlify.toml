@@ -6,3 +6,5 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+[build]
+  command = "npm run build && cp content/products.json public/data/products.json"
