@@ -1,0 +1,30 @@
+[
+  {
+    "id": "made-by-nishanth",
+    "slug": "made-by-nishanth",
+    "title": "Made by Nishanth",
+    "excerpt": "this is just a test for the cms by nishanth",
+    "content": "<p>Im Nishanth Pallay, Founder of Zyxen doing this CMS testing</p>",
+    "author": "Nishanth",
+    "date": "2025-12-12",
+    "coverImage": "/images/uploads/screenshot-2025-11-21-001357.png",
+    "readTime": "5 min read",
+    "category": "Quality Control",
+    "featured": false,
+    "published": true
+  },
+  {
+    "id": "test-1",
+    "slug": "test-1",
+    "title": "test 1",
+    "excerpt": "123456789",
+    "content": "<p>Q%W^zexrcitvuoybiupn</p>",
+    "author": "2asedrftyivuboiunpi",
+    "date": "2025-12-13",
+    "coverImage": "/images/uploads/screenshot-2025-11-21-001357.png",
+    "readTime": "5 min read",
+    "category": "Laboratory Equipment",
+    "featured": false,
+    "published": true
+  }
+]
